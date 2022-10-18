@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         EditText height = findViewById(R.id.editTxtHeight);
         EditText weight = findViewById(R.id.editTxtWeight);
 
-        float height_value = Integer.parseInt(height.getText().toString());
-        float weight_value = Integer.parseInt(weight.getText().toString());
+        float height_value = Float.parseFloat(height.getText().toString());
+        float weight_value = Float.parseFloat(weight.getText().toString());
         float BMI = weight_value / (height_value * height_value);
         String BMI_status = "";
 
